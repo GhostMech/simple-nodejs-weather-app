@@ -14,8 +14,8 @@ app.get('/weather', (req, res) => {
         }
         let weather = JSON.parse(body);
         console.log(`${weather.name}: ${weather.main.temp}`);
-        let parsed = Math.round(weather.main.temp);
-        res.send(`The weather in ${city} is ${parsed}`);
+        let roundedTemp = Math.round(weather.main.temp);
+        res.send(`The weather in ${city} is ${roundedTemp}`);
     });
 
 }).listen(3000);
