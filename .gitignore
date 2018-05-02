@@ -1,0 +1,5 @@
+# Leave out any API keys!
+apiKey.txt
+
+# Leave out the modules
+node_modules/
